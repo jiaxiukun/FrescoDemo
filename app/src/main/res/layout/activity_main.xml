@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baway.com.frescodemo.MainActivity">
+   <!-- fresco:placeholderImage="@mipmap/zhanweitu" 占位图
+       fresco:placeholderImageScaleType="fitCenter"  占位图缩放类型
+
+        fresco:progressBarImage="@mipmap/icon_progress_bar"   正在加载图
+        fresco:progressBarImageScaleType="centerInside"    正在加载图缩放类型
+        fresco:progressBarAutoRotateInterval="5000"       自动旋转间隔时间
+
+        fresco:failureImage="@mipmap/failed"    加载失败图
+       fresco:failureImageScaleType="centerInside"   加载失败图缩放类型
+
+        fresco:retryImage="@mipmap/tryagain"   重试图
+       fresco:retryImageScaleType="centerCrop"   重试图缩放类型
+
+        fresco:fadeDuration="5000"淡入淡出动画时间
+
+        fresco:backgroundImage="@android:color/holo_orange_light"  背景图
+
+      ***********以上是占位图+加载图+加载失败+重试+淡入淡出动画+背景图************
+
+       fresco:pressedStateOverlayImage="@android:color/holo_green_dark"  按压状态下显示的重叠图
+        fresco:overlayImage="@android:color/black"    重叠图(就一个颜色而已)
+
+          fresco:roundAsCircle="true" 是否是圆形图
+
+       fresco:roundedCornerRadius="30dp"  设置圆角图片  其中下面四个属性可以任意设置为false  代码为false 看效果
+       fresco:roundTopLeft="true"
+       fresco:roundTopRight="true"
+       fresco:roundBottomLeft="true"
+       fresco:roundBottomRight="true"
+
+       fresco:roundingBorderWidth="10dp"  圆形圆角边框宽度
+        fresco:roundingBorderColor="@android:color/black"  圆形圆角边框颜色
+
+        *****至此，占位图+加载图+加载失败+重试+淡入淡出动画+背景图+按压重叠图+圆形+圆角图+边框以及颜色****
+       -->
+
+   <com.facebook.drawee.view.SimpleDraweeView
+       android:id="@+id/main_adv"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_centerInParent="true"
+       fresco:actualImageScaleType="focusCrop"
+       fresco:placeholderImage="@mipmap/zhanweitu"
+       fresco:placeholderImageScaleType="fitCenter"
+       fresco:progressBarImage="@mipmap/load"
+       fresco:progressBarImageScaleType="centerInside"
+       fresco:progressBarAutoRotateInterval="5000"
+       fresco:failureImage="@mipmap/failed"
+       fresco:failureImageScaleType="centerInside"
+       fresco:retryImage="@mipmap/tryagain"
+       fresco:retryImageScaleType="centerCrop"
+       fresco:fadeDuration="5000"
+       fresco:backgroundImage="@android:color/holo_orange_light"
+       fresco:roundedCornerRadius="30dp"
+       fresco:roundTopLeft="true"
+       fresco:roundTopRight="true"
+       fresco:roundBottomLeft="true"
+       fresco:roundBottomRight="true"
+       fresco:roundingBorderWidth="10dp"
+       fresco:roundingBorderColor="@android:color/black"
+       />
+
+</RelativeLayout>
